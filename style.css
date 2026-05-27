@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --fonte-principal: 'Nunito', sans-serif;
+    --cor-01: rgb(238, 237, 237);
+    --cor-02: rgb(211, 26, 26);
+    --cor-03: rgb(44, 44, 44);
+    --cor-04: rgba(255, 0, 0, 0.621);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(18, 17, 17, 0.611), rgba(39, 37, 37, 0.644)),url('img/sesi-foto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+main {
+    background-color: var(--cor-01);
+    backdrop-filter: blur(50px);
+    border: 2px solid var(--cor-02);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 1px 1px 11px 4px rgba(255, 0, 0, 0.617)
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cor-03);
+}
+
+#sistema {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+    padding-left: 10px;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+#botoes button {
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: white;
+    color: var(--cor-03);
+    transition: 0.5s ease;
+}
+
+#botoes button:hover {
+    cursor: pointer;
+    background-color: var(--cor-04);
+}
